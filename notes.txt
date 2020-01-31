@@ -424,4 +424,9 @@ C# DB:
       - Security Groups: Local (this server), Domain (this domain), Global (any other connected domains), Universal (anyone anywhere, not used)
     * Group Policies
       - ex. don't forget to disable regedit for front line but let developers use regedit & firewall
-    * DNS
+  
+
+  ASP.NET
+    * No one uses web forms, but they're useful for prototyping/learning the concepts
+    * Don't assume that anything that worked when designing a Windows Form will work when designing a Web Form
+    * If using postback, wrap anything that should only happen once in a if (!IsPostBack) {}

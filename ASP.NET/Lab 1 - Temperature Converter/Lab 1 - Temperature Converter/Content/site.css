@@ -1,0 +1,32 @@
+﻿label {
+    font-weight: bold;
+    color: #ffaa88;
+}
+
+.jumbotron {
+    background-color: #392715;
+    color: #ffd7b0;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 500%;
+}
+
+.validator {
+    margin-left: 1em;
+    color: red;
+}
+
+#lblAnswer {
+    background-color: #aaaaaa;
+}
+
+.btn {
+    border-color: #ffaa88;
+    color: #ffaa88;
+}
+
+body{
+    background-color: #333333;
+}
