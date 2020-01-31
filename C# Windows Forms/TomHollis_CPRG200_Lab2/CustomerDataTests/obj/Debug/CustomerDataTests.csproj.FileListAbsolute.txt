@@ -1,0 +1,15 @@
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\CustomerDataTests.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\CustomerDataTests.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\CustomerData.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\CustomerData.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\obj\Debug\CustomerDataTests.csprojAssemblyReference.cache
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\obj\Debug\CustomerDataTests.csproj.CopyComplete
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\obj\Debug\CustomerDataTests.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerDataTests\obj\Debug\CustomerDataTests.pdb

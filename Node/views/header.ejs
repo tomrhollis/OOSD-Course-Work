@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="main.css" />
+		
+		<title>Tom's Site - About</title>
+		
+	</head>
+	
+	<body class="container-fluid">
+		<header class="row">
+			<h1 class="col-12">Tom's Site</h1>
+			<h3 class="col-12"><%= greeting %>, it's now <%= time %></h3>
+			<div id="loginSection">
+			<% if (username) { %>
+				<div id="loginLink" style="float:right"><a href="logout.html">Log out</a></div>
+				<div id="loginMessage">Logged in as <%= username %></div>
+			<% } else { %>
+				<div id="loginLink"><a href="login.html">Log in</a></div>
+				<div id="loginMessage">Log in for no reason!</div>
+			<% } %>  
+			</div>
+		</header>

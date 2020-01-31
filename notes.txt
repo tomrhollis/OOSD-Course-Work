@@ -1,0 +1,427 @@
+
+
+Installing GIT (the easy way):
+
+1) download/install git
+2) download/install github desktop
+3) command line: git config --global user.email "email@email.com"
+                 git config --global user.name "First Lasterson"
+4) create a new repository on the github website with readme and .gitignore
+5) click "clone or download" and select open in github desktop
+6) fetch origin
+7) profit
+
+Download and install xampp
+Activate MySQL
+
+Setting up Node (with express, EJS, and MySQL):
+
+1) download & install Node
+2) Open the selected firewall port 
+3) npm init: add github & stuff
+4) npm install [package] --save-dev
+   * nodemon, dotenv, express, ejs, body-parser, mysql, sequelize, mysql2, redis, connect-redis, express-session, bcryptjs
+5) edit .gitignore
+   * comment out node_modules and package.json -- let them go to git
+   * make sure .env is NOT allowed to be uploaded to git
+6) add 'start: "nodemon [name].js"' to package.json under scripts
+7) use "npm run start" to run
+8) store all sensitive information in .env and import it into the node script using dotenv
+   * port number, database login, server addresses, passwords/secret phrases, salts, etc
+
+
+
+Web Design:
+* Use Bootstrap for layout, eventually learn how to make it work on mobile
+
+
+
+
+
+
+
+
+
+Project Management Basics:
+
+* What are we trying to accomplish and why? (Project Initiation)
+  - what do we need to do? Business Case. (Scope/Quality)
+  - when will it/should it be done by? (Time)
+  - what resources do we have (equipment, people, money, etc)? Feasibility Study. (Cost)
+    - job descriptions of necessary roles
+  - often the above items are in conflict, you need to sacrifice one to make another work
+  - terms of references: define words in a centralized place
+
+* Break into objectives - Project Definition Document/Charter (Project Planning)
+  - each objective should be a SMART objective
+  - what is required?
+  - what is optional?
+
+* (Project Execution)
+  - Build
+  - Monitor and control of the various aspects of PM
+
+* project closure report (Project Closure)
+  - Review project completion. What went well? What lessons learned?
+  - Acceptance by the customer
+
+* Request for Proposal
+  - important to follow any structure outlined by client
+  - where not outlined, templates exist online (don't reinvent the wheel) -- or tailor a template to an outline!
+  
+ PROJECT DEFINITION
+   Purpose - the problem being solved & its priority level
+   Goal & objectives
+   Success Criteria
+   Context of the project to the organization
+   Scope (In/Out), including what's out of scope due to time constraints
+   Assumptions
+     - what systems they already have
+     - what upgrades or additions they will have to make and you're assuming they will make
+     - communication requirements
+     - necessary follow-ups
+   Constraints
+     - cost, time
+   Risks - reasonable, foreseeable, precedented
+   Stakeholders, identify ALL
+     - anyone involved in or touched by the project
+     - their roles and relationships to each other
+     - MAJOR stakeholders: people who must approve the project definition document
+   Recommended Approach
+     - strategies, methodologies and technologies
+     - why they were selected in this particular Case
+   Alternative Approaches
+     - things that were considered but rejected, and why they were rejected
+     - point to this later to help fend off customer-requested changes when necessary
+   Change Issues
+     - planning for changes that will have to be made
+     - how to handle any requests for changes
+        . the SAME SET of stakeholders that signed off on the original document should ALL approve any changes
+   Policies & Standards
+     - security
+     - industry standards & best practices
+   Preliminary Cost and Resource estimates & Schedule
+   Supporting Documents
+     - not necessary to include full copies of things that can be linked to online, or have been linked in previous sections
+     - project overview map
+     - project organization Chart
+     - work breakdown structure
+
+
+ PROJECT PLANNING - Establish a baseline plan
+   - Goals & Objectives again
+   - Assumptions again, but now with more detail
+   - Contingency plans for each assumption if they go wrong, and what to do/what needs to change if that happens
+   - Scope again
+   - Define Phases, Milestones and End Products - all very related
+     . End Products: anything deliverable to the client
+     . Phases: Natural divisions of the project, sometimes related to a deliverable
+     . Milestone: points in the schedule when a phase ends or a product is completed
+   - Tasks & Task relationships/prerequisites
+   - Assign resources & costs to Tasks
+ Separately:
+   - Org chart for the team (also good to have one for the stakeholders) with roles & responsibilities
+   - Reporting requirements - what kind of reports, who does them and on what schedule (internal team reports and external client reports)
+   - Change control plan again
+   - Acceptance plan: how will the client say it's all good?
+   - Cost estimate again
+   - Gantt chart (tasks & schedule)
+
+
+* Software Dev Lifecycle
+  - (Research: what problems exist? what are the business needs aren't being met? how can they be improved?)
+  - Feasibility study: can we do it? is it worth doing? (for them and us)
+  - Study Current system: 
+     . what processes, documents, and software exists? 
+     . Document what everyone does, where, when, why, how.
+     . Observation/shadowing
+     . Distributed questionnaires are helpful... IF THE QUESTIONS ARE GOOD. No open ended questions
+     . Study groups and individual interviews
+     . What activities are held in common between different roles and phases?
+     . What are the strengths and weaknesses of the current situation?
+  - Gather requirements, define where things should go from the current situation
+     . Resolve shortcomings of the current system without ruining what's good about it 
+  - Select solution - evaluate the alternatives and present the best solution
+  - Acquire hardware/software and/or design new application
+     . How will their data and business processes work on the new system?
+     . Do design walkthroughs: go through it with a stakeholder to see if they have problems or you missed something
+     . Design the testing regime as you go, preferably before you even code
+  - Build new application
+     . Document and test as you go -- documentation includes tooltips/user hand-holding and consideration
+     . UI design - what are the main things that should be front and center? what should be hidden in other menus? Make a hierarchy.
+     . CONTRACT ISSUE: If at all possible, have in the contract that you own the code, or at least can use it freely or at least not for competitors.
+  - deliver
+     . updated guides
+     . install, migrate data, train employees but especially train trainers so they can do it themselves in the future
+  - Maintain & improve
+     . Correct any bugs (warranty work - *specify* warranty period)
+     . User-requested enhancements -- in writing, triggering full process above
+     . Program & documentation updates
+
+  - Waterfall: each of the above is done in order with client signoff and QA check
+     . Advantages: more controlled, formal
+     . Disadvantages: rigid, on rails, not responsive to issues, new information, or multiple teams on different schedules
+  - Parallel: waterfall, but split into different projects
+     . Advantages: better for multiple teams
+     . Disadvantages: introduces the challenge of merging work back together
+  - RAD: Get through the waterfall quickly, doing the minimal amount to make it do the most important functions, then go back and do it again making improvements and additions
+     . Very common these days
+     . Advantages: users involved at every phase
+  - Throwaway Prototyping: make the prototype, put it to users, then throw it all away and start over from scratch, knowing what they know now
+     . Advantages: cleaner code in the end that's easier to modify and interact with
+     . Disadvantages: may hurt emotionally, maybe not the best idea for rush projects
+
+* Agile: Teamwork, customer collaboration, less documentation, more adaptable. Iterative like RAD/Prototyping
+  - Requirements and architecture don't need to be completely fleshed out up front, they are also developed on the go
+
+
+SCHEDULING
+  * Work Breakdown Structure
+    - Can be time-based
+      . Hierarchy of Phases, sub phases and tasks
+      . Milestones (use zero duration in Project)
+      . Top-level divisions are in time order
+    - Or task-category-based
+      . Logical groupings of tasks
+      . Tasks are roughly in time order within their categories
+    - Break things down until you have a task that can be assigned to one owner
+  * Gantt Chart
+    - Each task with start and end
+    - Microsoft Project, can do prereqs, resources, and auto scheduling
+  * Critical path method
+    - Charts out tasks by prereqs and next tasks, with durations
+    - Looks forward to get early start/finish dates 
+      . Starting from the beginning, follow the chart and simply add the GREATEST of all previous prereq times
+    - Looks back to get late start/finish dates
+      . Starting from the end, using the early finish date, subtract durations from the LEAST of all future prereq times
+    - Float: The amount of time something can be delayed or lengthened without impacting the project end date
+      . Float = (Late Start) - (Early Start)
+    - Free Float: The amount of time something can be delayed or lenghtened without impacting the next task
+      . Free Float = (Earliest Next Task Early Start) - (Current Task Early Finish)
+    - Critical Path: The path where there's no float, aka the longest path
+      . The tasks on these paths should be prioritized so they don't hold up the rest of the project
+  * Estimating Task duration
+    - PERT: Figure out optimistic time, most likely time, and pessimistic time.  Calculate weighted average with most likely at 4x
+      . Optimistic: Everything goes perfectly
+      . Pessimistic: The worst stuff happens
+      . (optimistic + (4 * most likely) + pessimistic) / 6
+      . Over time, history and experience make your guesses for those 3 times more accurate
+    - Simple: Take the critical path method and multiply by 1.5 when quoting
+  * Lag time: sometimes there needs to be a waiting period between two tasks (like waiting for paint to dry or concrete to set)
+  * Lead time: The prereq for the next task is actually completed part way through the current task, so the next task can start early
+  * Task relationships
+    - Finish to start: A is prereq for B. Can't start one before the other ends.
+    - Start to start: A can only start once B starts (eg, you can't test code until you start coding, but then they can run concurrently)
+    - Finish to finish: A and B are both started, but you can't complete B until A finishes
+    - Start to finish: Can't finish A until B starts. Rare.
+  * Problem Solving
+    - Time is often wasted by: vague scope, unclear expectations, competing/shifting priorities, no problem resolution or feedback process
+    - Usually comes down to poor communication
+  * Status reports: important to keep people on the same page
+    - Check everyone's status, compare data, progress checkin, resource/budget issues, opportunity for others to see missed red flags, help stakeholders make decisions
+    - Note the time period covered, activities done, the next planned activities, problems/issues encountered, potential problems
+  * Change control: capture data about each change that affects other people
+    - Check online for a template for this, there are a lot of standard fields
+    - changes should be verified by someone else independent from the modifier
+  * Problem reports
+    - Standard forms for bug reports and other problems
+
+
+OBJECT ORIENTED CONCEPTS
+  * Object: a person place of thing that can be described by attributes and operations
+  * Class: A blueprint for creating an object
+  * Classes should define operations as public and attributes as private, only modifiable through operations
+  * Relationships
+    - Association: An object uses data or methods from another object ("uses a" - most common)
+    - Aggregation: An object is part of another object ("has a")
+    - Generalization: An object is a specific version of another class ("is a" - inheritance)
+  * UML
+    - Use Case Analysis: Identify actors (people who interact with the system) and major functionality they use (use cases)
+      . Top level view of functionality from user's POV 
+      . Contains descriptions and diagrams
+      . No detailed steps & no timing considerations
+      . Descriptions: find a template online
+      . Diagrams: Use cases labeled with verb-noun phrase, actors Associated with them (solid line). Relationships between actors are not considered.
+                  Rarely: Relationships between two use cases can Include, Extend or Generalize other use cases (dashed line, annotated with which kind it is)
+                  Include: Always happens as part of something else. (Arrow toward the thing it's included in)
+                  Extend: optional additional thing (Arrow toward the optional element)
+                  Generalize: 
+    - Logical Model: Classes, Packages, and diagrams of relationships
+    - Physical Model: Component and Deployment Diagrams (software and hardware)
+  * Classes
+    - Shortcut: Start with any database tables. Don't have to include all attributes from the DB, but DO have to include all NOT NULL attributes
+    - Make sure everything in the business process is modeled somewhere in the class structure. Find the nouns and verbs in the problem descriptions/planning/use cases
+    - May see CRC cards: Front of card is public info, back of card is private info. Outdated, probably won't see it
+    - Class Diagrams: Rectangle with 3 sections
+      . Top: Name of class. Singular noun, first letter capitalized
+      . Middle: Attributes with name and type (type can be omitted on first drafts)
+      . Bottom: Methods with name, parameters, and return type
+      . Inheritance: Specialization of more general classes. Shown with arrow pointing to the parent (more general) class. No annotations on the line
+      . Bi-Directional Association: Usual kind of association. Shown with solid line, no arrow. Line annotated with relevant attribute on both ends, 
+                                    verb in the middle (student takes course), and number on the other ends (0 to 1, 1 to many, etc can do a finite upper bound number)
+      . Reflexive: loops back to self. Annotate outgoing with what specific kind of that class would refer to itself, and the ingoing with what kind would be referred to
+      . Uni-directional association: Rare. Only have one set of number/attribute/verb info.  Used when one class absolutely won't use the other in any way.
+      . Aggregation: with a diamond on the end that has the other class.  Eg: [Car]<>------[Wheel] 
+                     Only put the number on the side of the thing that is had. The diamond side is assumed to be just 1
+      . Composition: special aggregation when a part can't exist without the whole, Diamond is filled in.  Eg. [Company]<*>-----[Department] 
+                     (maybe a bit too picky to actually use)
+      . Avoid 3-class loops of relationships. Usually (but not always) something wrong with the model if you see them.
+      . Association Class: When you need a class to store information about the association of two other classes
+                           Kind of like the bridge table between two many-to-many database tables, but not required like that is
+                           Shown as dotted line coming off the line. Or you can just slap the class in there and remove the many to many, like with databases
+    - Package Diagram: Shows how packages (groups of classes) are related. Drawn like folders. Used only for medium/large systems
+      . Dependency - shown with arrow.  A --> B, package A has a class that depends on (uses) a class in package B.
+                     You can see which packages may need to be re-tested/re-compiled if other packages change -- especially if the API changes (method signatures)
+    - Sequence Diagram: For each use case, one or more diagrams showing different possible paths through the use case
+      . Timelines of actors and system fall down the page, with arrows when process is handed off from one to the other, with actions as lines
+      . Timelines of hardware and software handing things off once it gets to the system
+      . Timelines of classes handing things off once it gets to the software, with methods and return values as lines (solid and dashed respectively)
+      . Double line/thin rectangle on the timeline means the actor/object is active.
+      . X on the line means that object or actor is permanently done at that point
+      . Box around an area means a loop, loop can be described in the top left corner
+      . Walk through the diagram with the client to validate whether your understanding is correct
+    - Collaboration Diagram: Shows same info as sequence diagram but focused on interaction. can be generated from sequence diagram.
+      . More of flow chart with numbers indicating sequence
+    - State Transition Diagram: to show changes in an object over time ONLY when those changes cause objects' behaviors to change in a definite way
+      . One diagram per object
+      . State change are triggered by events. Example: a course with the maximum number of students no longer accepts students
+    - Component Diagram: shows how software relates to each other and should be deployed, with interfaces and port connections
+      . many companies don't use UML standard and they'll have to teach you their way. Otherwise google UML component diagram
+    - Deployment Diagram: shows what software is deployed on what hardware, and how the hardware is connected to each other
+      . again, usually not used in industry, and being made irrelevant by cloud deployments
+    - Information System Architectures:
+      . Client/Server: client handles display & formatting, data entry and query building. 
+                       Server handles processing, load balancing, deciding what should be locked or made available, making sure transactions are fully completed
+                       Both sides should validate the data
+      . Multi-Tiered: MVC (Model-View-Controller)
+                      View aka Presentation Layer - "client", formatting and validation
+                      Controller aka Business Layer - process control and flow. decisions and validation. pass info between client & data model
+                      Model aka Data Layer - interface between the program and the database (database also has its own validation)
+    
+
+PROJECT INITIATION PROTIPS
+* Talk about strengths and weaknesses
+* Talk about styles
+* For me: I like laying taking a long time to lay a foundation and then blow it away from a position of strengths
+  - Imagine a DBZ powerup (better than sharpening an axe)
+  I don't like leading, but often end up doing it because feeling lost or directionless is even worse
+    In those cases, I tend to grab leadership just so I can set the direction, so I have one
+
+
+Career Planning:
+
+* groups
+  - General: CIPS
+  - Agile: CAMUG (Calgary only)
+  - .NET: (exists, no info given)
+  - Hackernest
+  - Rainforest Alberta (rainforestab.ca)
+
+* Get *5* references -- because employers need 3 and if anything goes wrong with even one of them, it might screw you
+
+* Indeed is an aggregator: don't bother with the other job sites
+* Google yourself and check for bad stuff. Remove anything problematic that you can, have a strategy to deal with the stuff you can't
+* Networking/throwing your name & story out there with non-IT people: focus on **plain-English** examples of what you can do for a business
+* Networking events: Go with a wingman for social support. Talk about WHY you do things, to show your passion
+* People love to talk about themselves! Have questions to ask, and just let them talk
+* "Do you know of anyone else you think I should talk to about this as well?"
+
+
+
+
+
+
+
+C#
+ * GUI frameworks: Windows Forms and WPF (Windows Presentation Foundation). WPF is better and more modern -- learn on own time
+ * For form objects, use consistent prefixes for what kind they are and name them in a meaningful way
+    - Companies will have their own standards
+ * Automatic documentation comments: use 3 slashes /// - tags appear, fill in relevant tags, delete irrelevant ones
+ * ampersand before a letter in button text makes that button work when you do Alt+[that letter]
+ * Set AcceptButton and CancelButton on a form to choose what button is activated by Enter or Escape respectively
+ * .EXE file is in %userdata%\source\repos\[name]\[name]\bin\Debug
+ * Passing by Reference: both the method call and the method signature can have "ref" before the variable eg:
+   - Swap(ref x, ref y)
+   - private void Swap(ref double x, ref double y)
+ * Alternatively: use "out" instead of "ref".  This means the variable will be initialized within the method and then come out into 
+     some waiting variable name in your function (usually named but left null)
+ * Validation: have a separate library of validation functions you can port around
+   - validation functions and their error messages should be as specific as is reasonable for who will be using it
+   - do all validations in one group if possible, and in order of the flow of fields on the page -- better user experience
+   - to import directly into a project instead of referring to a separate library:
+       right click project > Add > Existing Item > Find the .CS file > Click Add > Change namespace in the imported code
+
+
+
+SQL SERVER
+ * Install express & management studio
+ * [DB] > Security > Logins > sa: Right click > properties Enable sa account and change password
+ * Right click DB > Properties > Security: SQL server authentication
+ * Properties > Options > Recovery Model: Select Full ****IMPORTANT****
+ * Just above that is "Collation", which is the language selection
+ * When using SQL scripts, make sure the proper DB is selected in the drop down
+ * Need to back up "master" and "msdb" system databases in addition to any user databases
+   - master has all the login information on all the databases
+   - msdb has all the scripts for all the databases
+ * can change between "results to grid" (excel format) and "results to text" (notepad format) on the toolbar
+ * data is accessed in select statements like this: [[server.][database].[schema].]table -- Only table is absolutely required
+ * Views quirk: if you want an ordered view (with ORDER BY), have to say "SELECT TOP 100 PERCENT"
+ * Can only use UPDATE with a view if the view is pulled from only one table
+ * Safety feature: Server > Properties > Connections > Implicit Transactions: Turn on
+   - After that, scripts don't need BEGIN TRAN but they still need COMMIT TRAN
+ * Don't mix DDL and DML. DDL statements are their own transactions, but DML needs to be grouped into transactions. Mixing fragments transactions
+
+JOINS
+ * Set joins: Same type of table at different locations. Eg customers and employees have some similar data and can be set joined on those columns
+   - Union join: All data combined into one set of results
+   - Intersect: Returns all data that's the same between the tables
+   - Exception: Returns all data not shared between the tables
+ * Equi-joins: Different types of tables that can be matched up with foreign keys (usual category of join)
+   - Inner join: Only joins rows that have a matching row in both tables (usual type of join)
+   - Outer join: Also Includes rows that don't match rows in the other table
+     . Left: Only include rows where the data is missing in the left table
+     . Right: Only include rows where the data is missing in the right table
+     . Full: Include Data missing in either table -- can do a full outer join of the whole database to get a master list of all the incomplete/bad data in the database
+   - Self join: When there's a foreign key loopback to the same table on the ER diagram
+   - Cross join: Similar to self join, used In BI to find data patterns such as looking through orders to see what items are usually bought together
+   - Natural join: (Oracle only, later)
+ * Nested joins (subqueries): For complex queries
+  - Correlated: Absolutely slowest join - With some work can be changed to an inner join and should be
+  - Non-correlated: Not slow, OK to use. If you can take the select out of the nest and it runs by itself, it's non-correlated
+ * If you really need speed, use the old join syntax and list the tables from biggest to smallest
+ * If code clarity is more important, use the current standard join syntax
+
+
+C# DB:
+ * Add handling for DBConcurrencyExceptions anywhere they might happen, Also SqlException (more common)
+ * Make sure data is refreshed often
+ * There may be a DataError event that you can make a handler for which can be used to give more helpful info to the user
+ * When getting all columns from a table, it's a good idea to explicitly list the column names in the SQL statement
+   - That way you can be sure you get everything you need in the code in case the database changes
+ * can avoid try/catch and needing to close connections/objects by implementing "using" blocks
+   - ex using (Sqlconnection conn = DBConn.GetConnection()) {}
+ * To ensure concurrency, test ALL fields when deleting a record to make sure they haven't changed.
+ * If DB columns contain nulls, there are three precautions to take:
+   - Use nullable types (ex int?, double?, DateTime?) anywhere the data might be null in the DB
+   - when writing to DB, check if null and send DBnull.Value instead of C# null
+   - in UPDATE statements say "WHERE field=@newfield OR field IS NULL AND @oldfield IS NULL"
+ * If you need transactions: create transaction object and add it to command objects instead of executing command objects alone
+   - transaction.Rollback() & transaction.Commit()
+   - Commit closes it out, rollback then impossible from C#
+   - If not committed, it will be rolled back automatically eventually
+
+
+   SYSTEMS:
+    * OSI model vs TCP/IP model: OSI is more conceptual, educational. TCP/IP has layers collapsed into each other but more real-world
+    * To make RDP work, fully update the VMs, enable it on the recipient and initiate on the Controller
+    * Backup - The one with windows server is OK for small and medium but not OK with enterprise, and can't do tape
+    * Permissions - inherited from parent
+      - Use appropriate groups and use them to give access, not individual user accounts
+      - Err on the side of NOT giving permission. Give only just as much permission as needed for them to do their job
+    * Active Directory
+      - Domain -> Forest -> Site -> Organizational Unit (OU) -> Users & Computers
+      - Servers probably in the forest, and some organizations put computers there too if all computers are the same
+      - Security Groups: Local (this server), Domain (this domain), Global (any other connected domains), Universal (anyone anywhere, not used)
+    * Group Policies
+      - ex. don't forget to disable regedit for front line but let developers use regedit & firewall
+    * DNS

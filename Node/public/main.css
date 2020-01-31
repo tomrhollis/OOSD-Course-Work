@@ -1,0 +1,109 @@
+
+body{
+	background-color: #eeeeff;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+header{
+	font-family: "Arial";
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	border-bottom: solid;
+}
+
+#loginSection{
+	position:absolute;
+	right: 5px;
+}
+
+#loginMessage{
+	float:right;
+	position:relative;
+	font-weight:400;
+}
+
+#loginLink{
+	float:right;
+}
+
+main {
+	padding-top: 1%;
+	padding-bottom: 1%
+}
+
+nav {
+	padding-top: 1%;	
+}
+
+nav ul{
+	text-align: center;
+	list-style-type: none
+}
+
+nav li {
+	float: left;
+	border: solid;
+	border-width: 2px;
+	background-color: #ccccff;
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+nav li:hover{
+	background-color: #ddddff;
+}
+
+nav li a {
+	color: #884422;
+	font-weight: 550;
+}
+
+nav li a:hover {
+	color: #cc6633;
+	font-weight: 550;
+	text-decoration: none;
+}
+
+article{
+	background-color: #eeeeee;
+	padding: 1%;
+	border: dotted;
+	border-width: 1px;
+	border-color: #dddddd;
+	text-align: justify;
+	margin-bottom: 1%;
+}
+
+.artitle{
+	border-bottom: dotted;
+	border-color: #dddddd;
+	border-width: 1px;
+	margin: 1%;
+}
+
+figure {
+	padding-left: 1%;
+	width: 24%;
+	float: right;
+	clear: right;
+}
+
+figure > img{
+	width: 100%;
+}
+
+figcaption{
+	font-size: 10pt;
+	font-weight: 700;
+	text-align: center;
+}
+
+footer {
+	padding: 1%;
+	padding-bottom: 0.5%;
+	border-top: dotted;
+	border-width: 1px;
+	border-color: #dddddd;
+}

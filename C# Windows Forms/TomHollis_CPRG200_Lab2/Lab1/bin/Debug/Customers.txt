@@ -1,0 +1,3 @@
+R,Bill McWilliams,23423,1224.568
+I,Sprocket Industries,4443,202.710
+C,Mom and Pop Shop,37494,534.11

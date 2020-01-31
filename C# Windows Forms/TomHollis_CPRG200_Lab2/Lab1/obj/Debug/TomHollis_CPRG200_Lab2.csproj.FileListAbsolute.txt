@@ -1,0 +1,13 @@
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\bin\Debug\Lab1.exe
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\bin\Debug\Lab1.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\TomHollis_CPRG200_Lab2.csprojAssemblyReference.cache
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\Lab1.frmMain.resources
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\TomHollis_CPRG200_Lab2.csproj.GenerateResource.cache
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\Lab1.exe
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\Lab1.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\bin\Debug\CustomerData.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\bin\Debug\CustomerData.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\TomHollis_CPRG200_Lab2.csproj.CopyComplete
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\Lab1\obj\Debug\Lab1.FrmAddCust.resources

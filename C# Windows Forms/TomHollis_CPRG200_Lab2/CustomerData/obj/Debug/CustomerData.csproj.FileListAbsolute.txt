@@ -1,0 +1,5 @@
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerData\obj\Debug\CustomerData.csprojAssemblyReference.cache
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerData\bin\Debug\CustomerData.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerData\bin\Debug\CustomerData.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerData\obj\Debug\CustomerData.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\TomHollis_CPRG200_Lab2\CustomerData\obj\Debug\CustomerData.pdb

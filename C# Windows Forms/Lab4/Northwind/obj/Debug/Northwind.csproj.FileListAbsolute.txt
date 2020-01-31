@@ -1,0 +1,5 @@
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\Lab4\Northwind\bin\Debug\Northwind.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\Lab4\Northwind\bin\Debug\Northwind.pdb
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\Lab4\Northwind\obj\Debug\Northwind.csprojAssemblyReference.cache
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\Lab4\Northwind\obj\Debug\Northwind.dll
+C:\Users\654812\Documents\GitHub\Tom-s-Projects\C#\Lab4\Northwind\obj\Debug\Northwind.pdb

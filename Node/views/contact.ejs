@@ -1,0 +1,45 @@
+<%- include('header'); -%>
+
+		<main class="row">
+			<nav class="col-2">
+				<ul>
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="about.html">About Me</a></li>
+				</ul>
+			</nav>
+			<section class="col-8">
+				<article>
+					<h2 class="artitle">Contact Form</h2>
+					<form method="post" action="/contactForm" id="contactForm">
+						<div>
+							<label for="ContactName">Name:</label><input type="text" name="ContactName" id="ContactName" />
+							<label for="ContactEmail">Email:</label><input type="text" name="ContactEmail" id="ContactEmail" />
+						</div>	
+						<div>
+							<label for="ContactText">Text:</label><textarea rows="5" cols="40" form="contactForm" name="ContactText" id="ContactText"></textarea>
+						</div>
+						<input type="submit" />
+					</form>
+				</article>
+				<article>
+					<h2 class="artitle">Get a Contact</h2>
+					<form method="post" action="/getContact">
+						<label for="GetName">Name:</label><input type="text" name="GetName" id="GetName" />
+						<input type="submit" value="search" />
+					</form>
+				</article>
+				<article>
+					<h2 class="artitle">Contact Me The Hard Way</h2>
+					<dl>
+						<dt>Address</dt>
+						<dd>555 Noneofyourbiznis Street</dd>
+						<dt>Phone</dt>
+						<dd>403-555-1234</dd>
+						<dt>Email</dt>
+						<dd>tom.hollis@edu.sait.ca</dd>
+					</dl>
+				</article>
+			</section>
+		</main>
+
+<%- include('footer'); -%>
