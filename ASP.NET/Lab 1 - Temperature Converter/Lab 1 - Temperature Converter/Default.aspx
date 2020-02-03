@@ -52,7 +52,7 @@
             <div class="form-row">
                 <asp:Button ID="btnCalc" class="col-sm-3 btn" runat="server" Text="Calculate" OnClick="btnCalc_Click" />
                 <div class="col-sm-3"></div>
-                <asp:Button ID="btnClear" class="col-sm-3 btn" runat="server" Text="Clear" OnClick="btnClear_Click" />
+                <asp:Button ID="btnClear" class="col-sm-3 btn" runat="server" Text="Clear" OnClick="btnClear_Click" CausesValidation="False" />
             </div>
         </form>
     </main>

@@ -430,3 +430,32 @@ C# DB:
     * No one uses web forms, but they're useful for prototyping/learning the concepts
     * Don't assume that anything that worked when designing a Windows Form will work when designing a Web Form
     * If using postback, wrap anything that should only happen once in a if (!IsPostBack) {}
+    * Transitioning from one form to another:
+      - Transfer: avoid this because the URL can lag, causing bookmark issues
+      - Redirect: Can use absolute or relative URLs. But if you're doing a commercial site, don't use redirect for external pages, open a new windows
+        . RedirectPermanent - Also allows search engines to pick up the redirection so they update to the new URL
+      - Cross-page posting: set postbackURL and access Page.PreviousPage
+    * Moving data from one form to another
+      - Session state - use Session[], can define indexes in [] to pass variables (as objects, need to typecast on the other end)
+        . does have a server burden, should avoid putting trivial things in the session state
+        . can be done with cookies or cookieless - cookieless puts it in the URL (use to avoid cookies, but be CAREFUL to avoid sensitive info in URL)
+          ~ Request.QueryString["fieldName"] is how to retrieve it on the other end
+        . web.config in Visual Studio has settings for the session state
+        . ViewState[]: works like Session[] but only for that page. Clears when page change or form submit
+        . Session_Start & Session_End events: initialize and close down a session (see global.asax below)
+      - Application state - can share info between sessions/users. data used by the entire web application
+        . Works like Session[] except it's Application[]
+        . Application_Start & Application_End: load up all the data needed for the app and save it away
+        . Global.asax: where the events are defined, global data & methods
+      - Cookies - often blocked, try to avoid
+        . A name-value pair stored on the client computers, Object type HttpCookie
+        . Session Cookies: session related info like session ID - don't set Expires date, then it won't be persistent
+        . Persistent Cookies: for stuff that needs to persist between sessions like preferences/personalization for the site
+        . Are cookies disabled? Can test by making a test cookie, redirecting to same page, try to read cookie, then act accordingly
+        . HttpCookieCollection class (Response.Cookies): .Add() .Remove() .Clear() - but remove and clear don't work for persistent cookies
+        . To remove a persistent cookie, make a new cookie of the same name and set expiry for one second ago
+    * Master Pages: site.master - Like in EJS with the main template that other templates or pages get imported into
+      - even uses <% %> like EJS
+      - individual page templates have <% Page %> and <% MasterType %> tags at the top though
+      - pages have <asp:Content ID=""> tags that insert those into the template at its <asp:ContentPlaceHolder ID=""> tags
+      - (not 100% sure about this) Can put stuff inside the content place holder tag on master which is then replaced in the individual pages
