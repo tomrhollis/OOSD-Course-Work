@@ -1,0 +1,18 @@
+
+
+
+Login/sessions
+Backend session authentication: does the person accessing these URLs have authorization?
+Commenting
+Validation
+currency/date handling 
+error messages/error message div
+
+onload/JSP: webpage gets a list of valid tables and populates the drop down
+
+
+
+
+Stretch: Click an ID field to load that table & detail
+
+

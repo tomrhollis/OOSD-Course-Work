@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+#listing {
+	overflow-x:auto; 
+}
+
+th, label{
+	text-transform: capitalize;
+}
+
+td {
+	white-space: nowrap;
+}
